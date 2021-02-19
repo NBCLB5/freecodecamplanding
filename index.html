@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="https://kit.fontawesome.com/0777d29f2c.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+
+
+        </style>
+
+    </head>
+    <nav id="navbar" class="nav">
+        <title>FreeCodeCamp</title>
+        <h3 class="nav-title">FreeCodeCamp Projects</h3>
+        <ul class="nav-list">
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <body>
+
+        <div id="projects" class="projects-section">
+            <h4 class="projects-section-header">Click the image to be take to the project page or the "plus" for an
+                ABOUT and a link to the code.</h4>
+        </div>
+
+
+        <!--kirby puckett-->
+        <button class="accordion"><img href="FCC tribute\index.html" target="_blank" class="img"
+                src="images/KirbyPuckett.jpg"> <a class="info">Kirby Puckett Tribute
+                Page</a></button>
+        <div class="panel">
+            <p>This page was the first page I ever created. I am hesitant to improve the design and revision of the CSS
+                because it is my first page. I enjoyed this page project, and it has opened a door into an area I
+                continue to learn about. Being the first page created there were many challenges however, I did feel
+                accomplished when I completed it and it passed the FreeCodeCamp debugger. </p>
+            <a class="pro-link" href="FCC tribute/index.html" class="#" target="_blank">View Page Here<i
+                    class="fas fa-file-alt"></i></a><br>
+            <a class="pro-link"
+                href="https://github.com/NBCLB5/NBportfolio/tree/main/responsive%20web%20design/FreeCodeCamp_Portfolio/FCC%20tribute"
+                class="#" target="_blank">View code here <i class="fas fa-code"></i></a>
+
+        </div>
+        <!--Ice Cream-->
+        <button class="accordion"><img class="img" src="images/icecream.jpg"> <a class="info">Survey Page</a></button>
+        <div class="panel">
+            <p>I created this survey page for FreeCodeCamp. I really enjoyed learning about the different inputs. I feel
+                the page could be in need of some updating design wise. I found the most difficult part of this project
+                was the CSS aspect of the page. I never really completed the design how I thought it would be the most
+                appealing. I would like to go back and connect the inputs to a database at some point.</p>
+            <a class="pro-link" href="FCC Survey/index.html" class="#" target="_blank">View Page Here <i
+                    class="fas fa-file-alt"></i></a><br>
+            <a class="pro-link"
+                href="https://github.com/NBCLB5/NBportfolio/tree/main/responsive%20web%20design/FreeCodeCamp_Portfolio/FCC%20Survey"
+                class="#" target="_blank">View code here <i class="fas fa-code"></i></a>
+
+        </div>
+        <!--Tech Doc-->
+        <button class="accordion"><img class="img" src="images/img_css.jpg"> <a class="info">Technical Documentation
+                Page</a></button>
+        <div class="panel">
+            <p>I created a technical document page for FreeCodeCamp. This was an interesting project and I enjoyed
+                looking up the information and being able to format and build the HTML framework. I found making the
+                page responsive was the most challenging aspect for this project. I still feel that I would like to go
+                back and adjust the design of the page at some point.</p>
+            <a class="pro-link" href="FCC Technical Documentation/index.html" class="#" target="_blank">View Page Here
+                <i class="fas fa-file-alt"></i></a><br>
+            <a class="pro-link"
+                href="https://github.com/NBCLB5/NBportfolio/tree/main/responsive%20web%20design/FreeCodeCamp_Portfolio/FCC%20Technical%20Documentation"
+                class="#" target="_blank">View code here <i class="fas fa-code"></i></a>
+
+        </div>
+        <!--Bee 101-->
+        <button class="accordion"><img class="img" src="images/bee101.jpg"> <a class="info">Beekeeping Page</a></button>
+        <div class="panel">
+            <p> This was a project for Free Code Camp. I enjoyed creating this page. I focused on the navigation bar and
+                scrolling mostly on this project. I had a hard time debugging the responsive aspects of the page to load
+                correctly in a mobile view of the page. However, after debugging it for some time it felt good to have
+                the page resize on different devices and still have the same design wanted.</p>
+            <a class="pro-link" href="FCC BEE/index.html" class="#" target="_blank">View Page Here <i
+                    class="fas fa-file-alt"></i></a><br>
+            <a class="pro-link"
+                href="https://github.com/NBCLB5/NBportfolio/tree/main/responsive%20web%20design/FreeCodeCamp_Portfolio/FCC%20BEE"
+                class="#" target="_blank">View code here <i class="fas fa-code"></i></a>
+
+        </div>
+        <!--B5honey-->
+        <button class="accordion"><img class="img" src="images/b5honey.jpg"> <a class="info">Product Landing
+                Page</a></button>
+        <div class="panel">
+            <p>I created this page for a Free Code Camp project. This is one of my favorite pages I have created because
+                I actual want to be a beekeeper in Chiloe Chile. I really enjoyed making the Logo and adding design with
+                CSS. I would like to add to this page later to make it more functional like creating a shopping cart and
+                checkout link. This will prepare me for my future hobby of beekeeping. I plan to use this web page as a
+                functional page for myself in the future.</p>
+            <a class="pro-link" href="FCC Product Landing/index.html" class="#" target="_blank">View Page Here <i
+                    class="fas fa-file-alt"></i></a><br>
+            <a class="pro-link"
+                href="https://github.com/NBCLB5/NBportfolio/tree/main/responsive%20web%20design/FreeCodeCamp_Portfolio/FCC%20Product%20Landing"
+                class="#" target="_blank">View code here <i class="fas fa-code"></i></a>
+
+        </div>
+
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+
+
+        </script>
+        <!-- START CONTACT SECTION -->
+
+        <section id="contact" class="contact-section">
+            <div class="contact-section-header">
+                <h2>I am looking forward to working with you.</h2>
+            </div>
+
+            <div class="contact-links">
+                <!--resume-->
+                <a href="Nathan-Banek-Resume Feb2021 I.pdf" class="btn contact-details" target="_blank">
+                    <i class="fas fa-file-pdf"></i></a>
+                <!--Email-->
+                <a href="mailto:nbanek10@gmail.com" class="btn contact-details" target="_blank">
+                    <i class="fas fa-envelope"></i></a>
+                <!--Telephone-->
+                <a href="tel:720-688-5536" class="btn contact-details" target="_blank">
+                    <i class="fas fa-phone-square-alt"></i></a>
+                <!--github-->
+                <a href="https://github.com/NBCLB5" class="btn contact-details" target="_blank">
+                    <i class="fab fa-github"></i></a>
+                <!--freecodecamp-->
+                <a href="https://www.freecodecamp.org/nbanek" class="btn contact-details" target="_blank">
+                    <i class="fab fa-free-code-camp"></i></a>
+                <!--codepen-->
+                <a href="https://codepen.io/NBanek/collections/public" class="btn contact-details" target="_blank">
+                    <i class="fab fa-codepen"></i></a>
+                <!--Linkin-->
+                <a href="https://www.linkedin.com/in/nathan-banek-187858196/" class="btn contact-details"
+                    target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+        </section>
+
+        <!-- END CONTACT SECTION -->
+        <!--back to the top button-->
+        <a href="#" class="to-top">
+            <i class="far fa-arrow-alt-circle-up"></i>
+        </a>
+        <script src="main.js"></script>
+    </body>
+    <footer class="footer">
+        Created by Nathan Banek
+        <!--code icon -->
+        <a href="https://github.com/NBCLB5/NBportfolio/blob/main/responsive%20web%20design/FreeCodeCamp_Portfolio/index.html"
+            class="#" target="_blank">View code here <i class="fas fa-code"></i></a>
+    </footer>
+
+
+</html>
